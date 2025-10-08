@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Issue Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Real-Time Issue Tracker 🎯</h1>
+
+        <div class="form-container">
+            <h2>Add New Issue</h2>
+            <form id="addIssueForm">
+                <input type="text" id="userName" placeholder="Your Name" required>
+                <input type="text" id="issueTitle" placeholder="Issue Title" required>
+                <textarea id="issueDesc" placeholder="Issue Description" required></textarea>
+                <button type="submit">Add Issue</button>
+            </form>
+        </div>
+
+        <div class="issues-container">
+            <h2>Current Issues</h2>
+            <table id="issuesTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title & Description</th>
+                        <th>Status</th>
+                        <th>Created By</th>
+                        <th>Comments</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
