@@ -22,6 +22,11 @@
     "description": "Todays topic linkedlist",
     "status": "Open",
     "createdBy": "Amrit",
-    "comments": []
+    "comments": [
+      {
+        "text": "lets do this",
+        "user": "Deepanshu"
+      }
+    ]
   }
 ]
