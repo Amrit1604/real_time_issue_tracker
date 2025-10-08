@@ -27,7 +27,7 @@ const readIssues = async () => {
     }
 };
 
-// Write issues to the JSON file and commit the change
+// Write issues to the JSON file and commit the change alsooo push
 const writeIssuesAndCommit = async (issues, commitMessage) => {
     await fs.writeFile(ISSUES_FILE, JSON.stringify(issues, null, 2));
     console.log('Issues file updated.');
@@ -36,9 +36,12 @@ const writeIssuesAndCommit = async (issues, commitMessage) => {
     try {
         await git.add(ISSUES_FILE);
         await git.commit(commitMessage);
-        console.log(`Git commit successful: "${commitMessage}"`);
+
+        await git.push('origin', 'main');
+
+        console.log(`Git commit and push successful: "${commitMessage}"`);
     } catch (err) {
-        console.error('Git commit failed:', err);
+        console.error('Git operation failed:', err);
     }
 };
 
