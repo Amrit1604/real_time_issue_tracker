@@ -20,12 +20,20 @@
     "id": 2,
     "title": "Lets do DSA",
     "description": "Todays topic linkedlist",
-    "status": "Open",
+    "status": "Closed",
     "createdBy": "Amrit",
     "comments": [
       {
         "text": "lets do this",
         "user": "Deepanshu"
+      },
+      {
+        "text": "done",
+        "user": "Deepa"
+      },
+      {
+        "text": "Auto test comment",
+        "user": "Bot"
       }
     ]
   },
@@ -35,7 +43,12 @@
     "description": "start with node js",
     "status": "In Progress",
     "createdBy": "Deepanshu",
-    "comments": []
+    "comments": [
+      {
+        "text": "lets do it",
+        "user": "Deepa"
+      }
+    ]
   },
   {
     "id": 4,
